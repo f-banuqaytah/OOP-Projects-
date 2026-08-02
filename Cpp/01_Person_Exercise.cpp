@@ -107,7 +107,7 @@ int main()
 {
 
   
-    clsPerson p1 (1,"Ali","abdullah","A@gmail.com",56775, 25);
+    clsPerson p1 (1,"Ali","abdullah","A@gmail.com","56775", 25);
     p1.Print();
     p1.sendEmail("hello","How are you?");
     p1.sendSMS("hello Ali");
