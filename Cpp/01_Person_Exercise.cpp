@@ -6,8 +6,8 @@ using namespace std;
 class clsPerson
 {
     private:
-    int _id, _phone, _age;
-    string _first_name, _last_name, _email;
+    int _id, _age;
+    string _first_name, _last_name, _email, _phone;
     
     string full_name()
     {
@@ -15,7 +15,7 @@ class clsPerson
     }
 
     public:
-    clsPerson (int id, string first_name, string last_name, string email, int phone,int age)
+    clsPerson (int id, string first_name, string last_name, string email, string phone,int age)
     : _id(id), _first_name(first_name), _last_name(last_name), _email(email), _phone(phone),_age(age)
 {
        
@@ -45,7 +45,7 @@ void setAge(int age)
     _age = age;
 }
 
-void setPhone(int phone)
+void setPhone(string phone)
 {
     _phone = phone;
 }
@@ -70,7 +70,7 @@ int Age()
     return _age;
 }
 
-int Phone()
+string Phone()
 {
     return _phone;
 }
